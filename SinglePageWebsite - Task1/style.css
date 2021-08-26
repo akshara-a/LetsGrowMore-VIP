@@ -1,0 +1,307 @@
+#fixednav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#projectSection{
+    background-color: #eaeaea;
+}
+#footerDiv{
+    text-align: center;
+    font-size: 14px;
+    padding: 50px 20px;
+    background-color: #eaeaea; 
+}   
+#introSection{
+    margin: 30px 250px;
+}
+.introTitle, .introDescription, .projectDescription, .projectInternalTitle, .blogTitle{
+    text-align: center;
+}
+.projectDescription{
+    padding: 5px;
+}
+.projectInternalTitle{
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    padding: 10px;
+}
+.projectInternalDescription{
+    padding: 15px 20px;
+    margin: 20px;
+}
+hr{
+    border: 0.5px solid #ba68c8;
+}
+input[type="button"]{
+    padding: 5px 15px;
+    background-color: #ba68c8;
+    color: white;
+    border-radius: 5px;
+}
+.projectImageDiv{
+    margin: 0px auto;
+    width: 250px;
+}
+
+.alignImage{
+    margin: 0px auto;
+    width: 64px;
+}
+.alignButton{
+    margin: 0px auto;
+    width: 35%;
+}
+.alignButtonPricing {
+    margin: 0px auto;
+    width: 60px;
+}
+.alignButtonProjects{
+    margin: 0 auto;
+    width: 145px;
+}
+#pricingDescription{
+    margin: 50px 250px;
+}
+iframe{
+    margin: 10px 0px 10px 20px;
+    border-radius: 20px;
+}
+hr{
+    width: 50%;
+    margin-top: 30px;
+}
+.userStyles{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #ba68c8;
+    border-radius: 100px;
+}
+#teamSection{
+    margin: 50px 250px;
+}
+.centerGridTeam{
+    margin: 0 auto;
+}
+#newsletterInternalStyle{
+    margin: 0 auto;
+    width: 550px;
+}
+#newsletter {
+    padding: 20px 100px;
+    border: none;
+    border-radius: 5px;
+}
+/*mobile mode */
+@media only screen and (min-width: 320px){
+    body{
+        margin: 0px;
+    }
+    #introSection{
+        margin: 30px 2px;
+    }
+    #introSectionFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    #mainPara{
+        margin: 0px 10px 20px 10px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .introGrid{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro{
+        padding: 15px;
+        margin: 10px 10px;
+        border-radius: 0px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+    .projectTitle, .pricingTitle, .videosTitle, .teamTitle, .newsletterTitle {
+        text-align: center;
+        padding: 10px;
+        color: #000;
+        width: 150px;
+        border-radius: 55px;
+        margin: 30px auto 0px auto;
+        font-size: 30px;
+    }
+    #imgSmall{
+        display: block;
+        margin-top: 25px;
+    }
+    #projectSection {
+        display: flex;
+        flex-direction: column;
+    }
+    .projectInternalDescription {
+        padding: 5px 20px;
+        margin: 0px 20px;
+    }
+    input[type="button"] {
+        padding: 5px 15px;
+        background-color: #ba68c8;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    #pricingDescription {
+        margin: 0px 15px;
+    }
+    #teamSection {
+        margin: 0px;
+    }
+    #imgLarge, #imgMedium{
+        display: none;
+    }
+    iframe{
+        margin: 10px auto 10px auto;
+        border-radius: 10px;
+        width: 250px;
+        height: 200px;
+    }
+    .project{
+        width: unset;
+    }
+    #newsletterExternalStyle {
+        border-radius: 0px;
+        background-color: #eaeaea;
+        padding: 80px 0px;
+    }
+    #newsletterInternalStyle {
+        margin: 0 auto;
+        width: 200px;
+    }
+    #newsletterSubmit {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: #ba68c8;
+    }
+    #newsletter {
+        padding: 20px 20px;
+        border: 1px solid #ba68c8;
+        border-radius: 5px;
+    }
+    #blogSection{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* size of 600px */
+@media only screen and (min-width : 600px){
+    #imgMedium{
+        display: block;
+        margin-top: 25px;
+    }
+    #imgSmall{
+        display: none;
+    }
+}
+/* Tablet mode */
+@media only screen and (min-width : 768px){
+    #introSectionFlex{
+        display: flex;
+        flex-direction: row;
+    }
+    .introGrid{
+        display: flex;
+        flex-direction: row;
+    }
+    #projectSection {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .project{
+        width: 50%;
+    }
+    #newsletterInternalStyle {
+        margin: 0 auto;
+        width: 320px;
+    }
+    #newsletterSubmit {
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    iframe {
+        margin: 10px auto 10px auto;
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    #blogSection{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width:961px) {
+    .project {
+        width: unset;
+    }
+    #projectSection {
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+    }
+    #blogSection{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 150px;
+    }
+    #introSection {
+        margin: 10px 100px;
+    }
+    #pricingDescription {
+        margin: 0px 150px;
+    }
+    iframe {
+        margin: 10px auto 10px auto;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+    }
+    #teamSection {
+        margin: 0px 200px;
+    }
+    #newsletterInternalStyle {
+        margin: 0 auto;
+        width: 470px;
+    }
+    #newsletter {
+        padding: 20px 100px;
+        border: 1px solid #ba68c8;
+        border-radius: 5px;
+    }
+}
+@media (min-width:1024px){
+    #imgLarge{
+        display: block;
+        margin-top: 25px;
+    }
+    #imgMedium{
+        display: none;
+    }
+}
+@media (min-width:1281px){
+    #introSection {
+        margin: 10px 250px;
+    }
+    #teamSection {
+        margin: 0px 350px;
+    }
+    iframe {
+        margin: 10px auto 10px auto;
+        border-radius: 10px;
+        width: 450px;
+        height: 200px;
+    }
+    #pricingDescription {
+        margin: 0px 250px;
+    }
+}

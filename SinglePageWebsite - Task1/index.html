@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* --- General styles --- */
+        /* Font */
+        body{
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* -------- Navbar --------- */
+        .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+            content: "\f0c9";
+            color: black;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #eaeaea;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 18px;
+        } 
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #ba68c8;
+        } 
+        .topnav a.active {
+            background-color: #ba68c8;
+            color: white;
+        }
+        .topnav .icon {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            .topnav a.icon {
+            float: right;
+            display: block;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <div id="fixednav">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="#projectsec">Projects</a>
+            <a href="#teamsec">Team</a>
+            <a href="#blogsec"> Blog </a>
+            <a href="javascript:void(0);" class="icon" onclick="ToggleFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </div>
+    <img src="images/topImage.png" style="width: 100%;" id="imgLarge">
+    <img src="images/topImageMedium.png" style="width: 100%;" id="imgMedium">
+    <img src="images/topImageSmall.png" style="width: 100%;" id="imgSmall">
+    <hr>
+    <!-- Intro section -->
+    <br/>
+    <div id="introSection">
+        <div id="introSectionFlex"> 
+            <p id="mainPara"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti ducimus, dolores blanditiis ad minus, id qui nihil totam quod nobis ut ullam. Saepe alias, omnis sapiente molestias consequatur ullam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita molestias, aut, veritatis et eveniet perferendis aliquid ullam illo, rerum quasi. Perspiciatis velit, voluptatum facere corporis fuga sit magni id! </p>
+        <img style="width: 300px;" src="images/projector.gif" alt="projector"/>
+        </div>
+        
+        <div class="introGrid">
+            <div class="intro"> 
+                <p class="alignImage"> <img src="images/notification.png" alt="notification"/> </p>
+                <h4 class="introTitle"> Lorem Ipsum </h4>
+                <p class="introDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et totam illum qui, commodi libero quisquam delectus nisi quidem eaque. Doloremque molestiae facilis non porro velit suscipit tenetur sunt, adipisci laborum! </p>
+                <p class="alignButton"> <input type="button" value="Learn More"/> </p>
+            </div>
+            <div class="intro"> 
+                <p class="alignImage"> <img src="images/mail.png" alt="mail"/> </p>
+                <h4 class="introTitle"> Lorem Ipsum </h4>
+                <p class="introDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et totam illum qui, commodi libero quisquam delectus nisi quidem eaque. Doloremque molestiae facilis non porro velit suscipit tenetur sunt, adipisci laborum! </p>
+                <p class="alignButton"> <input type="button" value="Learn More"/> </p>
+            </div>
+            <div class="intro"> 
+                <p class="alignImage"> <img src="images/task.png" alt="task"/> </p>
+                <h4 class="introTitle"> Lorem Ipsum </h4>
+                <p class="introDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et totam illum qui, commodi libero quisquam delectus nisi quidem eaque. Doloremque molestiae facilis non porro velit suscipit tenetur sunt, adipisci laborum! </p>
+                <p class="alignButton"> <input type="button" value="Learn More"/> </p>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <br/>
+    <h1 class="projectTitle" id="projectsec"> Projects </h1>
+    <div id="projectSection">
+        <div class="project">
+            <div class="projectImageDiv">
+                <img style="width: 250px;" src="images/blog.png" alt="blog" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <p class="alignButtonProjects"> <input type="button" value="Launch case study"/> </p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="projectImageDiv"> 
+                <img style="width: 250px;" src="images/mobile.png" alt="mobile" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <p class="alignButtonProjects"> <input type="button" value="Launch case study"/> </p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="projectImageDiv">  
+                <img style="width: 250px;" src="images/webDev.png" alt="webDesigner" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <p class="alignButtonProjects"> <input type="button" value="Launch case study"/> </p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="projectImageDiv"> 
+                <img style="width: 250px;" src="images/exhibition.png" alt="exhibition" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <p class="alignButtonProjects"> <input type="button" value="Launch case study"/> </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="pricingTitle"> Pricing </h1>
+        <div id="pricingDescription" class="introGrid">
+            <div class="intro"> 
+                <h4 class="introTitle"> Plan Name | Plan Cost </h4>
+                <p class="introDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et totam illum qui, commodi libero quisquam delectus nisi quidem eaque. Doloremque molestiae facilis non porro velit suscipit tenetur sunt, adipisci laborum! </p>
+                <p class="alignButtonPricing"> <input type="button" value="Buy"/> </p>
+            </div>
+            <div class="intro"> 
+                <h4 class="introTitle"> Plan Name | Plan Cost </h4>
+                <p class="introDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et totam illum qui, commodi libero quisquam delectus nisi quidem eaque. Doloremque molestiae facilis non porro velit suscipit tenetur sunt, adipisci laborum! </p>
+                <p class="alignButtonPricing"> <input type="button" value="Buy"/> </p>
+            </div>
+            <div class="intro"> 
+                <h4 class="introTitle"> Plan Name | Plan Cost </h4>
+                <p class="introDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et totam illum qui, commodi libero quisquam delectus nisi quidem eaque. Doloremque molestiae facilis non porro velit suscipit tenetur sunt, adipisci laborum! </p>
+                <p class="alignButtonPricing"> <input type="button" value="Buy"/> </p>
+            </div>
+    </div>
+    <!-- Video projects -->
+    <div>
+        <h1 class="videosTitle"> Video Projects </h1>
+        <div style="background-color: #ba68c8; padding: 30px;" class="introGrid">
+            <iframe src="https://www.youtube.com/embed/VlRwpbKN7zM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="420" height="200" src="https://www.youtube.com/embed/eF6IkI4PMIg?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            <iframe width="420" height="200" src="https://www.youtube.com/embed/i1iqCteLX5Y?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Our team -->
+    <h1 class="teamTitle" id="teamsec"> Our Team </h1>
+    <div id="teamSection">
+        <div class="introGrid">
+            <div class="centerGridTeam">
+                <img src="images/users/user1.png" alt="teamMemberOne" class="userStyles"> 
+                <br/> <p style="text-align: center;"> Name | Designation </p>
+            </div>
+            <div class="centerGridTeam">
+                <img src="images/users/user2.jpg" alt="teamMemberTwo" class="userStyles">
+                <br/> <p style="text-align: center;"> Name | Designation </p>
+            </div>
+            <div class="centerGridTeam">
+                <img src="images/users/user3.png" alt="teamMemberThree" class="userStyles">
+                <br/> <p style="text-align: center;"> Name | Designation </p>
+            </div>
+        </div>
+        <div class="introGrid">
+            <div class="centerGridTeam">
+                <img src="images/users/user4.png" alt="teamMemberOne" class="userStyles"> 
+                <br/> <p style="text-align: center;"> Name | Designation </p>
+            </div>
+            <div class="centerGridTeam">
+                <img src="images/users/user5.png" alt="teamMemberTwo" class="userStyles">
+                <br/> <p style="text-align: center;"> Name | Designation </p>
+            </div>
+            <div class="centerGridTeam">
+                <img src="images/users/user6.png" alt="teamMemberThree" class="userStyles">
+                <br/> <p style="text-align: center;"> Name | Designation </p>
+            </div>
+        </div>
+    </div>
+    <h1 class="newsletterTitle"> Newsletter Signup </h1>
+    <div id="newsletterExternalStyle">
+        <div id="newsletterInternalStyle">
+            <input type="text" name="newsletter" id="newsletter"/> <input type="submit" name="newsletterSubmit" id="newsletterSubmit"/>
+        </div>
+    </div>
+    <!-- Blog -->
+    <h1 class="blogTitle" id="blogsec"> Blog </h1>
+    <div id="blogSection">
+        <div class="project">
+            <div class="projectImageDiv">
+                <img style="width: 250px;" src="images/blog.png" alt="blog" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <center> <input type="button" value="Launch case study"/> </center>
+            </div>
+        </div>
+        <div class="project">
+            <div class="projectImageDiv"> 
+                <img style="width: 250px;" src="images/mobile.png" alt="mobile" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <center> <input type="button" value="Launch case study"/> </center>
+            </div>
+        </div>
+        <div class="project">
+            <div class="projectImageDiv">  
+                <img style="width: 250px;" src="images/webDev.png" alt="webDesigner" class="projectImage">
+            </div>
+            <h3 class="projectInternalTitle"> Project Title </h3>
+            <div class="projectInternalDescription">
+                <p class="projectDescription"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque beatae architecto qui ullam optio natus amet error! Commodi quisquam minima dicta impedit nobis odio temporibus nostrum libero vero soluta? </p>
+                <center> <input type="button" value="Launch case study"/> </center>
+            </div>
+        </div>
+    </div>
+    <div id="footerDiv">
+        <p> This task is done by Akshara A, with respect to her Web Development internship at LetsGrowMore! </p>
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+</html>
