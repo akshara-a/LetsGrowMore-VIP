@@ -1,0 +1,43 @@
+@media (min-width: 570px){
+    .card-group>.card {
+        flex: 1 35% !important;
+    }
+    .card-group{
+        margin: 30px 40px;
+    }
+}
+@media (min-width: 997px){
+    .card-group>.card {
+        flex: 1 1 25% !important;
+    }
+    .card-group{
+        margin: 80px 90px;
+    }
+}
+@media (min-width: 1200px){
+    .card-group>.card {
+        flex: 1 1 25% !important;
+    }
+    .card-group{
+        margin: 100px 250px;
+    }
+}
+.card{
+    padding: 10px 20px;
+    margin: 20px;
+}
+.App{
+    font-family: 'Space Grotesk', sans-serif;
+}
+#ButtonDiv{
+    display: flex;
+    background-color: #748ca2;
+    padding: 15px;
+    justify-content: flex-end;
+}
+button{
+    padding: 5px 20px;
+    border-radius: 20px !important;
+    border: none;
+}
+
